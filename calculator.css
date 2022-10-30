@@ -1,0 +1,39 @@
+table{
+  width:300px;
+  height:400px;
+  border: solid 1px #dcdcdca4;
+  border-right: solid 4px #dcdcdca4;
+  border-bottom: solid 4px #dcdcdca4;
+  border-radius: 10px;
+  text-align: center;
+  padding:8px;
+  margin:20px;
+}
+
+input{
+  width:100px;
+  height:70px;
+  font-size:x-large;
+  background-color: lightgray;
+  border:none;
+  border-radius:5px;
+  outline-color:blue;
+}
+
+.display{
+  width:420px;
+  text-align:right;
+  color:white;
+  background-color:black;
+}
+
+input:hover {
+    background: #747373b9;
+}
+.display:hover {
+  background: black;
+}
+input:active {
+    background:  #5a5a5a;
+} 
+ 
