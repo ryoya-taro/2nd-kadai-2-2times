@@ -8,45 +8,40 @@
  </head>
  
  <body>
-   <form name="dentaku">
-     <table>
-       <tr>
-         <td colspan="4">
-           <input type="text" class="display" name="display" value=""diabled>
-         </td>
-       </tr>
+  <div id=calc>
+       <div>
+        <input id="result" type="text" class="display" value=""diabled>
+       </div>
        
-       <tr>
-        <td><input type="button" value="7" onclick="get_calc(this)"></td>
-        <td><input type="button" value="8" onclick="get_calc(this)"></td>
-        <td><input type="button" value="9" onclick="get_calc(this)"></td>
-        <td><input type="button" value="+" class="operator" name="div_btn" onclick="get_calc(this)"></td>
-       </tr>
-        <tr>
-        <td><input type="button" value="4" onclick="get_calc(this)"></td>
-        <td><input type="button" value="5" onclick="get_calc(this)"></td>
-        <td><input type="button" value="6" onclick="get_calc(this)"></td>
-        <td><input type="button" value="-" class="operator" name="multi_btn" onclick="get_calc(this)"></td>
-      </tr>
-      <tr>
-        <td><input type="button" value="1" onclick="get_calc(this)"></td>
-        <td><input type="button" value="2" onclick="get_calc(this)"></td>
-        <td><input type="button" value="3" onclick="get_calc(this)"></td>
-        <td><input type="button" value="*" class="operator" onclick="get_calc(this)"></td>
-      </tr>
-       <tr>
-        <td><input type="button" value="0" onclick="get_calc(this)"></td>
-        <td><input type="button" value="00"onclick="get_calc(this)"></td>
-        <td><input type="button" value="." class="equal" onclick="get_calc(this)"></td>
-        <td><input type="button" value="/" class="operator" onclick="get_calc(this)"></td>
-      </tr>
-      <tr>
-        <td><input type="button" value="AC" onclick="get_calc(this)"></td>
-        <td><input type="button" value="=" class="equal" onclick="get_calc(this)"></td>
-      </tr>
+       <div>
+        <input type="button" value="7" onclick="num_click(7)">
+        <input type="button" value="8" onclick="num_click(8)">
+        <input type="button" value="9" onclick="num_click(9)">
+        <input type="button" value="+" onclick="ope_click('+')">
+       </div>
        
-     </table>
-   </form>
+       <div>
+        <input type="button" value="4" onclick="num_click(4)">
+        <input type="button" value="5" onclick="num_click(5)">
+        <input type="button" value="6" onclick="num_click(6)">
+        <input type="button" value="-" onclick="ope_click('-')">
+       </div>
+       <div>
+        <input type="button" value="1" onclick="num_click(1)">
+        <input type="button" value="2" onclick="num_click(2)">
+        <input type="button" value="3" onclick="num_click(3)">
+        <input type="button" value="*" onclick="ope_click('*')">
+       </div>
+       <div>
+        <input type="button" value="0" class="zero" onclick="num_click(0)">
+        <input type="button" value="." onclick="num_click('.')">
+        <input type="button" value="/" onclick="ope_click('/')">
+       </div>
+       <div>
+        <input type="button" value="AC" class="clear" onclick="c_click()">
+        <input type="button" value="=" class="equal" onclick="equal_click()">
+       </div>
+  </div>
  <script src="calculator.js"></script>
  </body>
  </html>

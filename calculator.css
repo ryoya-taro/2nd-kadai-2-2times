@@ -1,6 +1,6 @@
-table{
-  width:300px;
-  height:400px;
+body{
+  width:470px;
+  height:480px;
   border: solid 1px #dcdcdca4;
   border-right: solid 4px #dcdcdca4;
   border-bottom: solid 4px #dcdcdca4;
@@ -18,22 +18,33 @@ input{
   border:none;
   border-radius:5px;
   outline-color:blue;
+  margin:5px;
 }
 
 .display{
-  width:420px;
+  width:442px;
   text-align:right;
-  color:white;
-  background-color:black;
+  color:black;
+  background-color:lightgray;
 }
 
 input:hover {
     background: #747373b9;
 }
 .display:hover {
-  background: black;
+  background: lightgray;
 }
 input:active {
     background:  #5a5a5a;
 } 
+
+.zero{
+  width:215px;
+}
  
+.equal{
+  width:215px;
+}
+.clear{
+  width:215px;
+}
